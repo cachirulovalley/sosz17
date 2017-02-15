@@ -16,8 +16,8 @@
 title: 'Cachirulo Valley'
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Vuelve el evento startup más 
-baseurl: "/" # the subpath of your site, e.g. /blog
+  Vuelve el evento startup de Cachirulo Valley.
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://sosz17.cachirulovalley.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
