@@ -16,7 +16,7 @@ $svg = $('.logo > svg').drawsvg({
 });
 
 function animateLogo() {
-  $svg.drawsvg('animate');  
+  $svg.drawsvg('animate');
 }
 
 animateLogo();
@@ -30,24 +30,15 @@ $('.carousel').swipeleft(function() {
   $(this).carousel('next');
 });
 
-// Google Map
-function googleMap() {
-  var map = document.getElementById('google-map');
-
-  var map_options = {
-    center: new google.maps.LatLng(41.6590242,-0.9090006),
-    scrollwheel: false,
-    zoom: 16,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  }
-  var map = new google.maps.Map(map, map_options)
-
-  // Map Marker
-  var myLatlng = new google.maps.LatLng(41.6590242,-0.9090006);
-  var marker = new google.maps.Marker({
-    position: myLatlng,
-    map: map,
-    icon: 'img/location-pin.svg'
-  });
-}
-google.maps.event.addDomListener(window, 'load', googleMap);
+$(document).ready(function(){
+  var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',{
+          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/attribution">CARTO</a>'
+        });
+        var map = L.map('google-map', {
+            scrollWheelZoom: false,
+            center: [41.659472,-0.907274],
+            zoom: 15
+        });
+        L.marker([41.659472,-0.907274]).addTo(map);
+        map.addLayer(layer);
+});
