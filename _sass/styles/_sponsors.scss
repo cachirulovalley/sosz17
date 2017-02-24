@@ -64,3 +64,33 @@
     background-image: url(../img/logos/540deg.png);
   }
 }
+
+@media (max-width: 480px) {
+  .event-sponsor-list li {
+    display: block;
+  }
+  .sponsor {
+    width: 100%; 
+  }
+  .sponsor-telsome {
+    background-image: url(../img/logos/telsome.png);
+  }
+  .sponsor-10labs {
+    background-image: url(../img/logos/10labs.png);
+  }
+  .sponsor-shuttlecloud {
+    background-image: url(../img/logos/shuttlecloud.png);
+  }
+  .sponsor-centraldereservas {
+    background-image: url(../img/logos/centraldereservas.png);
+  }
+  .sponsor-cuentica {
+    background-image: url(../img/logos/cuentica.png);
+  }
+  .sponsor-semmantica {
+    background-image: url(../img/logos/semmantica.png);
+  }
+  .sponsor-540deg {
+    background-image: url(../img/logos/540deg.png);
+  }
+}
