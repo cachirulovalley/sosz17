@@ -5,8 +5,7 @@
   padding: 2em 0;
   li {
     display: inline-block;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: 20px;
   }
 }
 
@@ -21,36 +20,47 @@
     margin-bottom: 0;
   }
 }
-.sponsor-facebook {
-  background-image: url(../img/facebook-grey.svg);
+.sponsor-telsome {
+  width: 100px;
+  background-image: url(../img/logos/telsome_grey.png);
   &:hover {
-    background-image: url(../img/facebook.svg);
+    background-image: url(../img/logos/telsome.png);
   }
 }
-.sponsor-jquery {
-  width: 150px;
-  background-image: url(../img/jquery-grey.svg);
+.sponsor-10labs {
+  background-image: url(../img/logos/10labs_grey.png);
   &:hover {
-    background-image: url(../img/jquery.svg);
+    background-image: url(../img/logos/10labs.png);
   }
 }
-.sponsor-envato {
-  background-image: url(../img/envato-grey.svg);
+.sponsor-shuttlecloud {
+  background-image: url(../img/logos/shuttlecloud_grey.png);
   &:hover {
-    background-image: url(../img/envato.svg);
+    background-image: url(../img/logos/shuttlecloud.png);
   }
 }
-.sponsor-tumblr {
-  width: 150px;
-  background-image: url(../img/tumblr-grey.svg);
+.sponsor-centraldereservas {
+  background-image: url(../img/logos/centraldereservas_grey.png);
   &:hover {
-    background-image: url(../img/tumblr.svg);
+    background-image: url(../img/logos/centraldereservas.png);
   }
 }
-.sponsor-atlassian {
-  width: 150px;
-  background-image: url(../img/atlassian-grey.svg);
+.sponsor-cuentica {
+  background-image: url(../img/logos/cuentica_grey.png);
   &:hover {
-    background-image: url(../img/atlassian.svg);
+    background-image: url(../img/logos/cuentica.png);
+  }
+}
+.sponsor-semmantica {
+  background-image: url(../img/logos/semmantica_grey.png);
+  &:hover {
+    background-image: url(../img/logos/semmantica.png);
+  }
+}
+.sponsor-540deg {
+  width: 100px;
+  background-image: url(../img/logos/540deg_grey.png);
+  &:hover {
+    background-image: url(../img/logos/540deg.png);
   }
 }
