@@ -22,47 +22,36 @@
 }
 .sponsor-telsome {
   width: 100px;
-  background-image: url(../img/logos/telsome_grey.png);
-  &:hover {
-    background-image: url(../img/logos/telsome.png);
-  }
+  background-image: url(../img/logos/telsome.png);
 }
 .sponsor-10labs {
-  background-image: url(../img/logos/10labs_grey.png);
-  &:hover {
-    background-image: url(../img/logos/10labs.png);
-  }
+  background-image: url(../img/logos/10labs.png);
 }
 .sponsor-shuttlecloud {
-  background-image: url(../img/logos/shuttlecloud_grey.png);
-  &:hover {
-    background-image: url(../img/logos/shuttlecloud.png);
-  }
+  background-image: url(../img/logos/shuttlecloud.png);
 }
 .sponsor-centraldereservas {
-  background-image: url(../img/logos/centraldereservas_grey.png);
-  &:hover {
-    background-image: url(../img/logos/centraldereservas.png);
-  }
+  background-image: url(../img/logos/centraldereservas.png);
 }
 .sponsor-cuentica {
-  background-image: url(../img/logos/cuentica_grey.png);
-  &:hover {
-    background-image: url(../img/logos/cuentica.png);
-  }
+  background-image: url(../img/logos/cuentica.png);
 }
 .sponsor-semmantica {
-  background-image: url(../img/logos/semmantica_grey.png);
-  &:hover {
-    background-image: url(../img/logos/semmantica.png);
-  }
+  background-image: url(../img/logos/semmantica.png);
 }
 .sponsor-540deg {
   width: 100px;
-  background-image: url(../img/logos/540deg_grey.png);
-  &:hover {
-    background-image: url(../img/logos/540deg.png);
-  }
+  background-image: url(../img/logos/540deg.png);
+}
+.sponsor-ticketea {
+  background-image: url(../img/logos/ticketea.png);
+}
+.sponsor-etopia {
+  width: 107px;
+  background-image: url(../img/logos/etopia.png);
+}
+.sponsor-ayuntamiento {
+  background-image: url(../img/logos/ayuntamiento.png);
 }
 
 @media (max-width: 480px) {
@@ -70,27 +59,6 @@
     display: block;
   }
   .sponsor {
-    width: 100%; 
-  }
-  .sponsor-telsome {
-    background-image: url(../img/logos/telsome.png);
-  }
-  .sponsor-10labs {
-    background-image: url(../img/logos/10labs.png);
-  }
-  .sponsor-shuttlecloud {
-    background-image: url(../img/logos/shuttlecloud.png);
-  }
-  .sponsor-centraldereservas {
-    background-image: url(../img/logos/centraldereservas.png);
-  }
-  .sponsor-cuentica {
-    background-image: url(../img/logos/cuentica.png);
-  }
-  .sponsor-semmantica {
-    background-image: url(../img/logos/semmantica.png);
-  }
-  .sponsor-540deg {
-    background-image: url(../img/logos/540deg.png);
+    width: 100%;
   }
 }
