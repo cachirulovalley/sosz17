@@ -72,73 +72,6 @@ title: Startup Open Space 2017 - #sosz17
 
   <hr class="hr">
 
-  <!-- <div class="speakers-block pad-top-60 pad-bottom-60 container">
-    <div class="text-center pad-top-20">
-      <h2 class="h2 uppercase">Apúntate</h2>
-      <p class="fs-4">
-        Sed ut perspiciatis unde omnis iste natus error
-      </p>
-    </div>
-    <ul class="event-speakers clear">
-      <li class="col-6-m col-3-l">
-        <div class="col-12-m no-float">
-          <a class="event-speaker" href="#">
-            <img class="block" src="img/edward.jpg" alt="Edward">
-          </a>
-          <h3 class="uppercase fs-4 pad-top-20"><a class="event-speaker-name" href="#">Edward</a></h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore.
-          </p>
-        </div>
-      </li>
-      <li class="col-6-m col-3-l">
-        <div class="col-12-m no-float">
-          <a class="event-speaker" href="#">
-            <img class="block" src="img/lucy.jpg" alt="Lucy">
-          </a>
-          <h3 class="uppercase fs-4 pad-top-20"><a class="event-speaker-name" href="#">Lucy</a></h3>
-          <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore.
-          </p>
-        </div>
-      </li>
-      <li class="col-6-m col-3-l">
-        <div class="col-12-m no-float">
-          <a class="event-speaker" href="#">
-            <img class="block" src="img/nathan.jpg" alt="Nathan">
-          </a>
-          <h3 class="uppercase fs-4 pad-top-20"><a class="event-speaker-name" href="#">Nathan</a></h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore.
-          </p>
-        </div>
-      </li>
-      <li class="col-6-m col-3-l">
-        <div class="col-12-m no-float">
-          <a class="event-speaker" href="#">
-            <img class="block" src="img/jacob.jpg" alt="Jacob">
-          </a>
-          <h3 class="uppercase fs-4 pad-top-20"><a class="event-speaker-name" href="#">Jacob</a></h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore.
-          </p>
-        </div>
-      </li>
-    </ul>
-    <div class="col-10-m col-6-l no-float center text-center">
-      <p class="fs-4 font-500">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
-      </p>
-      <a class="button button-primary" href="#"><span class="icon icon-right chevron-right">Register</span></a>
-    </div>
-  </div> -->
-
-  <hr class="hr">
-
   <!-- <div class="schedule-block pad-top-60 pad-bottom-60 container">
     <div class="clear pad-top-20 pad-bottom-20">
       <div class="col-6-l">
@@ -309,6 +242,8 @@ title: Startup Open Space 2017 - #sosz17
     </div>
   </div>
 
+  <hr class="hr">
+
 <!-- TODO: agregar una imagen de slot free -->
 
   <div class="event-sponsors-block pad-top-60 pad-bottom-60 container text-center">
@@ -382,6 +317,41 @@ title: Startup Open Space 2017 - #sosz17
         <br>
         Así que tú eliges: <a href="https://www.ticketea.com/entradas-conferencia-startup-open-space-zaragoza-2017-sosz17/">comprar tu entrada simple o con cena</a> :)
       </p>
+  </div>
+</div>
+
+<hr class="hr">
+
+<div class="speakers-block pad-top-60 pad-bottom-60 container">
+  <div class="text-center pad-top-20">
+    <h2 class="h2 uppercase">¿Quién viene?</h2>
+    <p class="fs-4">
+      Vamos a ir actualizando la lista de asistentes, para que vayas conociendo al resto de personas del evento
+    </p>
+  </div>
+
+
+  <ul class="event-speakers clear">
+    {% for member in site.data.members %}
+    <li class="col-6-m col-3-l">
+      <div class="col-12-m no-float">
+        <a class="event-speaker" href="https://twitter.com/{{member.Twitter}}">
+          <img class="block" src="https://twitter.com/{{member.Twitter}}/profile_image?size=bigger" alt="{{ member.Nombre }}">
+        </a>
+        <h3 class="fs-4 pad-top-20">{{ member.Nombre }}</h3>
+        <p><a href="https://twitter.com/{{member.Twitter}}" target="blank">{{member.Twitter}}</a></p>
+        <p class="uppercase">
+          {{ member.Startup }}
+        </p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  <div class="col-10-m col-6-l no-float center text-center">
+    <p class="fs-4 font-500">
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+    </p>
+    <a class="button button-primary" href="#"><span class="icon icon-right chevron-right">Register</span></a>
   </div>
 </div>
 
