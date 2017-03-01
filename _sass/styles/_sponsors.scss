@@ -5,7 +5,7 @@
   padding: 2em 0;
   li {
     display: inline-block;
-    margin: 20px;
+    margin: 40px;
   }
 }
 
@@ -64,6 +64,10 @@
 .sponsor-carto {
   width: 102px;
   background-image: url(../img/logos/carto.png);
+}
+.sponsor-torresburriel {
+  width: 118px;
+  background-image: url(../img/logos/torresburriel.png);
 }
 
 @media (max-width: 480px) {
