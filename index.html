@@ -335,9 +335,15 @@ title: Startup Open Space 2017 - #sosz17
     {% for member in site.data.members %}
     <li class="col-6-m col-3-l">
       <div class="col-12-m no-float">
-        <a class="event-speaker" href="https://twitter.com/{{member.Twitter}}">
-          <img width="100%" class="block" src="https://twitter.com/{{member.Twitter}}/profile_image?size=bigger" alt="{{ member.Nombre }}">
+        {% if member.Twitter %}
+          <a class="event-speaker" href="https://twitter.com/{{member.Twitter}}">
+            <img width="100%" class="block" src="https://twitter.com/{{member.Twitter}}/profile_image?size=bigger" alt="{{ member.Nombre }}">
+          </a>
+        {% else %}
+        <a class="event-speaker" href="#">
+          <img width="100%" class="block" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png" alt="{{ member.Nombre }}">
         </a>
+        {% endif %}
         <h3 class="fs-4 pad-top-20">{{ member.Nombre }}</h3>
         <p><a href="https://twitter.com/{{member.Twitter}}" target="blank">{{member.Twitter}}</a></p>
         <p class="uppercase">
