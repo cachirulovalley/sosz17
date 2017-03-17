@@ -16,13 +16,9 @@
     top: 50%;
     right: 10px;
     margin-top: -8px;
-    background-image: url(../img/circle-with-minus.svg); // $teal
   }
   &.collapsed {
     border-radius: 0 5px 5px 5px;
-    &:after {
-      background-image: url(../img/circle-with-plus.svg); //teal
-    }
   }
 }
 .event-schedule-time {
